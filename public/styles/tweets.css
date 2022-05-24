@@ -38,6 +38,10 @@ article.tweet-list header div.name {
   font-weight: bold;
 }
 
+article.tweet-list header div.name div#name1 {
+  padding-left: 0.5em;
+}
+
 article.tweet-list div.tweets {
   display: flex;
   padding: 1em;
@@ -72,5 +76,5 @@ article.tweet-list footer div.emojis i.hover{
 }
 
 div.name img{
-  width: 20%;
+  width: 30%;
 }
