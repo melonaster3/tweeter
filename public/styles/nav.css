@@ -1,0 +1,40 @@
+nav{
+  display: flex;
+  height: 120px;
+  background-color: #1D3557;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: space-between;  
+  z-index: 9;
+}
+
+nav span { 
+  font-family: 'Bungee', cursive;
+}
+nav h1 {
+  margin: auto 1.5em;
+  font-size: larger;
+
+}
+nav h2 {
+  display: flex;
+  margin: auto 1.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: medium;
+  font-weight: lighter;
+  flex-direction: column;
+}
+
+#bold {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 1000;
+}
+
+.icon{
+  display:flex;
+  justify-content: center;
+}
+
+nav i {
+  color: #BC6C25;
+}
