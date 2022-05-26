@@ -5,6 +5,7 @@
  */
 
 const renderTweets = function(tweets) {
+  $('.tweet-list').empty();
   for (let tweet of tweets) {
     const render = createTweetElement(tweet);
     $('.tweet-list').append(render);
@@ -29,7 +30,7 @@ const createTweetElement = function(tweet) {
             ${timeago.format(tweet['created_at'])}
           </div>
 
-          <div class="emojis">
+          <div class="icon">
             <i class="fas fa-flag"></i>
             <i class="fa-solid fa-heart"></i>
             <i class="fa fa-retweet" aria-hidden="true"></i>
@@ -48,13 +49,10 @@ $(document).ready(function (){
       renderTweets(data1);
     })
   }
-
   loadTweets();
-
   $("#target").on("submit", (event) => {
     event.preventDefault();
     let value = $("#target").serialize();
-    //const placeholder = value.slice(5).split('');
     let placeholder = $("#tweet-text").val(); 
     if(placeholder.length > 140) { 
       alert("Message is too long!");
@@ -69,8 +67,9 @@ $(document).ready(function (){
             console.log('SUCCESS');
           } 
         })
+      $("#tweet-text").val('');
     }     
-    
+    loadTweets();
   })
 
 
