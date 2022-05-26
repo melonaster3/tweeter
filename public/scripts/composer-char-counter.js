@@ -16,8 +16,12 @@ $(document).ready(function() {
       $(counter[0]).addClass("red");
     } else if (count >= 0 && $(counter[0].class === "red")) { 
       $(counter[0]).removeClass("red");
-    }
+    } 
     counter[0].innerHTML = count;
+  });
+
+  $("#target").on("submit", (event) => {
+    counter[0].innerHTML = 140;
   });
 
 });

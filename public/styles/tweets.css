@@ -67,6 +67,10 @@ article.tweet-list footer div.icon{
   width: auto;
 }
 
+article.tweet-list section.tweet-box:hover {
+  box-shadow: 10px 10px 5px #BC6C25;
+}
+
 article.tweet-list footer div.icon i{
   padding: 0 0.5em 0 0.5em;
   color: #BC6C25;

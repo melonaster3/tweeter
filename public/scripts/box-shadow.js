@@ -7,4 +7,12 @@ $(document).ready(function() {
       $(this).css("color", "#BC6C25")
   });
 
+  let boxShadow = document.getElementsByClassName("tweet-box");
+
+  $(boxShadow).hover(function() {
+    this.css('box-shadow', "10px 10px 5px lightblue");
+  })
+
+
+
 });
