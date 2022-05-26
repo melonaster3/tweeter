@@ -50,8 +50,10 @@ return tweets;
 
 
 $(document).ready(function (){
+  $(".error").hide();
   
   const loadTweets = () => {
+    $(".error").hide();
     $.get ("/tweets", (data1) => {
       renderTweets(data1);
     })
@@ -63,7 +65,7 @@ $(document).ready(function (){
     let value = $("#target").serialize();
     let placeholder = $("#tweet-text").val(); 
     if(placeholder.length > 140) { 
-      alert("Message is too long!");
+      validError();
     } else if (!placeholder) {
       alert("You do not have a message!");
     } else {
@@ -82,4 +84,8 @@ $(document).ready(function (){
 
 
 })
+
+const validError = () => {
+ $(".error").slideDown();
+}
 

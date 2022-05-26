@@ -78,3 +78,12 @@ article.tweet-list footer div.icon i:hover {
 div.name img{
   width: 30px;
 }
+
+p.error {
+  display: flex;
+  padding: 1em;
+  width: 100%;
+  justify-content: center;
+  color: red;
+  border: 2px ridge red;
+}
