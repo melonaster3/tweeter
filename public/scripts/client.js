@@ -48,10 +48,10 @@ let tweets = `<section class="tweet-box">
 return tweets;
 }
 
-
 $(document).ready(function (){
   $(".error").hide();
-  
+  $(".new-tweet").hide();
+  console.log("hello from Client");
   const loadTweets = () => {
     $(".error").hide();
     $.get ("/tweets", (data1) => {
@@ -79,6 +79,7 @@ $(document).ready(function (){
         })
       $("#tweet-text").val('');
       loadTweets();
+
     }     
   })
 

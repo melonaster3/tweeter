@@ -40,5 +40,9 @@ nav h2 {
 }
 
 nav i {
-  color: #BC6C25;
+    color: #BC6C25;
+}
+
+nav i:hover {
+  color: #FEFAE0;
 }

@@ -18,6 +18,9 @@ article.tweet-list section.tweet-box {
   border-color: #1D3557;
   margin-bottom: 1.5em;
 }
+article.tweet-list section.tweet-box:hover {
+  box-shadow: 10px 10px 5px #BC6C25;
+}
 
 article.tweet-list header { 
   padding: 0.5em 1em 0 1em;
@@ -65,10 +68,6 @@ article.tweet-list footer {
 article.tweet-list footer div.icon{
   display: flex;
   width: auto;
-}
-
-article.tweet-list section.tweet-box:hover {
-  box-shadow: 10px 10px 5px #BC6C25;
 }
 
 article.tweet-list footer div.icon i{
