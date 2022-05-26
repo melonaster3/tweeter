@@ -5,6 +5,7 @@
  */
 html {
   box-sizing: border-box;
+  background-color: #FEFAE0;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -14,23 +15,56 @@ html {
  * Global layout stuff
  */
 
-body {
-  color: #545149;
-  background-color: #FEFAE0;
-  padding-top: 5em;
-  font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
+@media only screen and (max-width : 1024px) {
+
+  body {
+    color: #545149;
+    background-color: #FEFAE0;
+    padding-top: 5em;
+    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  main {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FEFAE0;
+    margin: auto;
+    padding-top: 3em;
+  }
 }
 
-main {
-  display: flex;
-  width: 90%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #FEFAE0;
-  margin: auto;
+@media only screen and (min-width : 1024px){
+
+  body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #545149;
+    background-color: #FEFAE0;
+    padding-top: 5em;
+    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  main {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FEFAE0;
+    margin: auto;
+    padding-top: 3em;
+    padding-right: 3em;
+  }
+
 }
+
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
