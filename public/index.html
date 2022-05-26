@@ -42,6 +42,9 @@
     <!-- App JS -->
     <script type="text/javascript" src="scripts/client.js"></script>
 
+    <!-- Timeago JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   </head>
 
   <body>
@@ -60,7 +63,7 @@
       </div>
       <br>
       <div>
-          <h2>Your Name</h2>
+          <h2>Sang Lee</h2>
       </div>
     </header>
 
@@ -68,8 +71,8 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form>
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+        <form id="target">
+          <input type="text" id="tweet-text" placeholder="What are you humming about?" name="text"></input>
           <div>
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
@@ -78,33 +81,12 @@
       </section>
 
       <article class="tweet-list">
-        <section class="tweet-box">
-        <header>
-          <div class="name"> <img src="/images/face.png">
-          <div id="name1">Sang</div>
-          </div>
-          <div class="userid">@melonaster</div>
-        </header>
-        <div class="tweets">
-          Gamestop to the moon!!!
-        </div>
-
-        <footer>
-          <div class="date">
-            10 days ago
-          </div>
-
-          <div class="emojis">
-            <i class="fas fa-flag"></i>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa fa-retweet" aria-hidden="true"></i>
-          </div>
-
-        </footer>
-      </section>
+        
       </article>
 
 
     </main>
+
   </body>
+
 </html>

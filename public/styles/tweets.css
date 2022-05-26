@@ -15,6 +15,8 @@ article.tweet-list section.tweet-box {
   width: 99%;
   justify-content: center;
   align-items: center;
+  border-bottom: solid;
+  border-color: #1D3557;;
 }
 
 article.tweet-list header { 

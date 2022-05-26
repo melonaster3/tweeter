@@ -15,7 +15,7 @@ section.new-tweet label {
   font-weight: bolder;
   color: #283618;
 }
-section.new-tweet textarea {
+section.new-tweet input {
   width: 100%;
   height: 35px;
   color: #283618;
