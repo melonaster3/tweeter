@@ -12,35 +12,42 @@ const renderTweets = function(tweets) {
   }
 }
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const createTweetElement = function(tweet) {
-  let tweets = `
-        <section class="tweet-box">
-        <header>
-          <div class="name"> <img src=${tweet["user"]["avatars"]}>
-          <div id="name1">${tweet["user"]["name"]}</div>
-          </div>
-          <div class="userid">${tweet["user"]["handle"]}</div>
-        </header>
-        <div class="tweets">
-          ${tweet["content"]["text"]}
-        </div>
 
-        <footer>
-          <div class="date timeago">
-            ${timeago.format(tweet['created_at'])}
-          </div>
+let tweets = `<section class="tweet-box">
+<header>
+  <div class="name"> <img src=${tweet["user"]["avatars"]}>
+  <div id="name1">${tweet["user"]["name"]}</div>
+  </div>
+  <div class="userid">${tweet["user"]["handle"]}</div>
+</header>
+<div class="tweets">
+  ${escape(tweet["content"]["text"])}
+</div>
 
-          <div class="icon">
-            <i class="fas fa-flag"></i>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa fa-retweet" aria-hidden="true"></i>
-          </div>
+<footer>
+  <div class="date timeago">
+    ${timeago.format(tweet['created_at'])}
+  </div>
 
-        </footer>
-        </section>`;
+  <div class="icon">
+    <i class="fas fa-flag"></i>
+    <i class="fa-solid fa-heart"></i>
+    <i class="fa fa-retweet" aria-hidden="true"></i>
+  </div>
 
-  return tweets;
+</footer>
+</section>`;
+
+return tweets;
 }
+
 
 $(document).ready(function (){
   
@@ -50,6 +57,7 @@ $(document).ready(function (){
     })
   }
   loadTweets();
+
   $("#target").on("submit", (event) => {
     event.preventDefault();
     let value = $("#target").serialize();
@@ -68,8 +76,8 @@ $(document).ready(function (){
           } 
         })
       $("#tweet-text").val('');
+      loadTweets();
     }     
-    loadTweets();
   })
 
 

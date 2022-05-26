@@ -47,7 +47,6 @@ article.tweet-list header div.name div#name1 {
 article.tweet-list div.tweets {
   display: flex;
   padding: 1em;
-
   width: 95%;
   color: #1D3557;
   font-size: medium;
@@ -70,6 +69,10 @@ article.tweet-list footer div.icon{
 
 article.tweet-list footer div.icon i{
   padding: 0 0.5em 0 0.5em;
+  color: #BC6C25;
+}
+article.tweet-list footer div.icon i:hover {
+  color: #1D3557;
 }
 
 div.name img{
