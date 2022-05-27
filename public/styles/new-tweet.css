@@ -1,3 +1,4 @@
+/* CSS for tweet input section */
 section.new-tweet {
   display: flex;
   justify-content: center;
@@ -15,16 +16,19 @@ section.new-tweet label {
   font-weight: bolder;
   color: #283618;
 }
+
+/* CSS for the tweet input text-box */
 section.new-tweet input {
   width: 100%;
   height: 35px;
   color: #283618;
-  font-weight: bolder ;
+  font-weight: bolder;
   margin-bottom: 10px;
-  background: #FEFAE0;
-  border: 0px #FEFAE0;
+  background: #fefae0;
+  border: 0px #fefae0;
 }
 
+/* CSS for the button and character count */
 
 section.new-tweet div {
   border-top: 2px solid;
@@ -34,7 +38,7 @@ section.new-tweet div {
 }
 
 section.new-tweet div {
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
 }
 
 section.new-tweet output.red {
@@ -42,7 +46,6 @@ section.new-tweet output.red {
 }
 
 section.new-tweet button {
-  background-color: #BC6C25;
-  color: #FEFAE0;
+  background-color: #bc6c25;
+  color: #fefae0;
 }
-

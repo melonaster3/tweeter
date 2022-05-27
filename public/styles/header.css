@@ -1,42 +1,43 @@
-@media only screen and (max-width : 1024px) {
-header.top{ 
-  display: flex;
-  height: 400px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #BC6C25;
-  background-image: url("../images/background-image.png");
-}
-header h2 {
-  color: #FEFAE0;
+/* CSS for the header when the media screen is NOT a desktop*/
+@media only screen and (max-width: 1024px) {
+  header.top {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #bc6c25;
+    background-image: url("../images/background-image.png");
+  }
+  header h2 {
+    color: #fefae0;
+  }
+
+  #profile-pic {
+    padding-top: 20px;
+  }
 }
 
-#profile-pic {
-  padding-top: 20px;
-}
-}
+/* CSS for the header when the media screen is large as a desktop*/
 
-@media only screen and (min-width : 1024px){
-
-  header.top{ 
+@media only screen and (min-width: 1024px) {
+  header.top {
     display: flex;
     height: 100%;
     width: 50%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #BC6C25;
+    background-color: #bc6c25;
     background-image: url("../images/background-image.png");
     margin: 3em;
   }
   header h2 {
-    color: #FEFAE0;
+    color: #fefae0;
   }
-  
+
   #profile-pic {
     padding-top: 20px;
   }
-
 }

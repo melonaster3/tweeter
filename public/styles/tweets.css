@@ -1,3 +1,4 @@
+/* CSS for the tweet list */
 article.tweet-list {
   display: flex;
   width: 100%;
@@ -8,6 +9,8 @@ article.tweet-list {
   align-items: center;
 }
 
+/* CSS for the tweet list, each box */
+
 article.tweet-list section.tweet-box {
   display: flex;
   flex-direction: column;
@@ -15,26 +18,31 @@ article.tweet-list section.tweet-box {
   justify-content: center;
   align-items: center;
   border: solid;
-  border-color: #1D3557;
+  border-color: #1d3557;
   margin-bottom: 1.5em;
 }
+
+/* CSS for the tweetbox shadow */
+
 article.tweet-list section.tweet-box:hover {
-  box-shadow: 10px 10px 5px #BC6C25;
+  box-shadow: 10px 10px 5px #bc6c25;
 }
 
-article.tweet-list header { 
+/* CSS for the tweetbox header: name, icon and user id */
+
+article.tweet-list header {
   padding: 0.5em 1em 0 1em;
   font-size: medium;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background-color: #FEFAE0;
+  background-color: #fefae0;
   align-items: center;
-  color: #1D3557;
+  color: #1d3557;
 }
 
-article.tweet-list header div.userid{
-  color: #B2BEB5;
+article.tweet-list header div.userid {
+  color: #b2beb5;
 }
 
 article.tweet-list header div.name {
@@ -47,14 +55,18 @@ article.tweet-list header div.name div#name1 {
   padding-left: 0.5em;
 }
 
+/* CSS for the tweetbox tweets */
+
 article.tweet-list div.tweets {
   display: flex;
   padding: 1em;
   width: 95%;
-  color: #1D3557;
+  color: #1d3557;
   font-size: medium;
   font-weight: bold;
 }
+
+/* CSS for the tweetbox footer: how many time has passed and icons */
 
 article.tweet-list footer {
   display: flex;
@@ -65,22 +77,27 @@ article.tweet-list footer {
   font-size: small;
 }
 
-article.tweet-list footer div.icon{
+article.tweet-list footer div.icon {
   display: flex;
   width: auto;
 }
 
-article.tweet-list footer div.icon i{
+article.tweet-list footer div.icon i {
   padding: 0 0.5em 0 0.5em;
-  color: #BC6C25;
-}
-article.tweet-list footer div.icon i:hover {
-  color: #1D3557;
+  color: #bc6c25;
 }
 
-div.name img{
+/* CSS for the tweetbox footer:icons hover */
+
+article.tweet-list footer div.icon i:hover {
+  color: #1d3557;
+}
+
+div.name img {
   width: 30px;
 }
+
+/* CSS for the hidden error box that shows when character goes over 140 and tweet is input */
 
 p.error {
   display: flex;
@@ -89,19 +106,18 @@ p.error {
   justify-content: center;
   color: red;
   border: 2px ridge red;
- 
 }
 
-@media only screen and (min-width : 1024px){
-  p.error {
-    font-size: large;
-}
-}
+/* Different font for differnet media screen */
 
-@media only screen and (max-width : 1024px){
+@media only screen and (min-width: 1024px) {
   p.error {
     font-size: large;
   }
-  }
-  
+}
 
+@media only screen and (max-width: 1024px) {
+  p.error {
+    font-size: large;
+  }
+}
