@@ -27,5 +27,8 @@ This clone is very much like Twitter. A user can tweet and the server will save 
 
 ### Screenshots
 
+Screenshot of Tweeter front page on desktop
 !["Screenshot of Tweeter front page on desktop"](https://github.com/melonaster3/tweeter/blob/master/docs/ScreenShot%201.png?raw=true)
+
+Screenshot of Tweeter front page on smaller screen
 !["Screenshot of Tweeter front page on smaller screen"](https://github.com/melonaster3/tweeter/blob/master/docs/ScreenShot%202.png?raw=true)
